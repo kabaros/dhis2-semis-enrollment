@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/kabaros/dhis2-semis-enrollment/compare/v1.0.0...v1.0.1) (2025-07-02)
+
+
+### Bug Fixes
+
+* fixed fake bug ([0d87550](https://github.com/kabaros/dhis2-semis-enrollment/commit/0d8755004c0a6e531473b071f57a4fe3c83e7b51))
+
 # 1.0.0 (2025-07-02)
 
 
