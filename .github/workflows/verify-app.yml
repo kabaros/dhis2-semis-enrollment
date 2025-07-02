@@ -1,0 +1,29 @@
+# workflow -> jobs -> steps
+
+name: verify-app
+
+on:
+    pull_request:
+    push:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "build step"
+    lint:
+        runs-on: ubuntu-latest
+        needs: ['build']
+        steps:
+            - run: echo "lint step"
+    tsc:
+        runs-on: ubuntu-latest
+        needs: ['build']
+        name: 'type check'
+        steps:
+            - run: echo "tsc"
+    release:
+        needs: ['build', 'tsc', 'lint']
+        runs-on: ubuntu-latest
+        steps:
+            - run: exit 1
