@@ -1,5 +1,3 @@
-# workflow -> jobs -> steps
-
 name: verify-app
 
 on:
@@ -8,4 +6,4 @@ on:
 
 jobs:
     build:
-        uses: kabaros/workflows/.github/workflows/build-release.yml@main
+        uses: Saudigitus/workflows/.github/workflows/build-release.yml@main
